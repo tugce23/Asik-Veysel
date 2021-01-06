@@ -1,5 +1,7 @@
 body{
     font-family:  Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,7 +13,7 @@ p{
 }
 
 #first-paragraph {
-    color: brown;
+    color: #cb0101;
     font-weight: bold;
 }
 
@@ -55,4 +57,32 @@ h3{
 
 }
 
+body.dark {
+    background-color: #3a445d;
+}
 
+body.dark h1 {
+    color: #ffffff !important;
+}
+
+body.dark a {
+    color:#ffffff;
+}
+
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p {
+    color: #ffffff;
+}
+
+body.dark * {
+    color: #ffffff;
+}
+
+body.dark p,
+body.dark ul {
+    opacity: 0.8;
+}
