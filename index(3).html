@@ -4,9 +4,10 @@
     <title>Âşık Veysel</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body class="dark">
-    <header>
-      <h1 class="green large-font" id="first-heading">Âşık Veysel</h1>
+  <body id="container" class="dark">
+    <header style="position: relative;">
+    <button style="position: fixed;  top: 20px; right: 20px; z-index: 1;" onclick="switchMode()" >Light</button>
+      <h1 class="green large-font" id="first-heading" >Âşık Veysel</h1>
 
       <p id="first-paragraph"><strong>Âşık Veysel</strong> (born Veysel Şatıroğlu; 25 October 1894 – 21 March 1973) was a Turkish ashik and highly regarded poet of the <a href="https://en.wikipedia.org/wiki/Turkish_folk_literature" target="_blank">Turkish folk literature</a>. He was born in the Sivrialan village of the Şarkışla district, in the province of Sivas. He was an ashik, poet, songwriter, and a bağlama virtuoso, the prominent representative of the Anatolian ashik tradition in the 20th century. He was blind for most of his lifetime. His songs are usually sad tunes, often dealing with the inevitability of death. However, Veysel used a wide range of themes for his lyrics; based on morals, values, and constant questioning on issues such as love, care, beliefs, and how he saw the world as a blind man.</p>
       
@@ -35,7 +36,6 @@
 
       <section id="biography">
         <h2>Biography</h2>
-        <a href="#navigation">Ana Menu'ye Git</a>
   
         <section id="early_life">
           <h3>Early life</h3>
@@ -56,8 +56,7 @@
       </section>
   
       <section id="selected_works">
-        <h2>Selected Works</h2> 
-        <a href="#navigation">Ana Menu'ye Git</a>
+        <h2>Selected Works</h2>
         <ul>
           <li>Anlatamam derdimi (5:24)</li>
           <li>Arasam seni gül ilen (4:18)</li>
@@ -102,6 +101,14 @@
 
     <footer>
       &copy; 2020 - <a href="./about-us.html">Designed by Bootcamp Students</a>  <a href="#">Sayfa basina don</a>
+       
+      <a href="#navigation" style="position: fixed; bottom: 20px; right:20px; z-index: 10;">Ana Menu'ye Git</a>
     </footer>
+
+    <script>
+      function switchMode() {
+          document.getElementById('container').classList.toggle('dark');
+      }
+    </script>
   </body>
 </html>

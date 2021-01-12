@@ -11,7 +11,9 @@ h1, h2, h3, h4, h5, h6 {
 p{
     font-size: 18px;
 }
-
+body.dark * {
+    color: #ffffff;
+}
 #first-paragraph {
     color: #cb0101;
     font-weight: bold;
@@ -78,11 +80,13 @@ body.dark p {
     color: #ffffff;
 }
 
-body.dark * {
-    color: #ffffff;
-}
+
 
 body.dark p,
 body.dark ul {
     opacity: 0.8;
+}
+
+body.dark button {
+    color:black;
 }
